@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>\
+
+    <button onclick="sub();" class="Sub-button">Subscribe</button>
+    <button onclick="addCart();" class="aTC">Add to Cart</button>
+    <button onclick="Flw();" class="fLW">follow</button>
+    <button onclick="refresh();" class="Refresh-button">refresh</button>
+    <button onclick="ply();" class="pause">pause</button>
+    <script>
+        function sub(){
+            const but= document.querySelector('.Sub-button');
+            if(but.innerText==='Subscribe'){
+            but.innerText='Subscribed';
+            }
+            else{
+                but.innerText='Subscribe';
+            }
+        }
+        function addCart(){
+            const ATC=document.querySelector('.aTC');
+            if(ATC.innerText === 'Add to Cart'){
+                ATC.innerText = 'Added to Cart' ; 
+            }
+            else{
+                ATC.innerText = 'Add to Cart';
+            }
+        }
+        function Flw(){
+            const follow = document.querySelector('.fLW');
+            if (follow.innerText === 'follow'){
+                follow.innerText = 'Following';
+            }
+            else{
+                follow.innerText = 'follow';
+            }
+        }
+        function refresh(){
+            const ref = document.querySelector('.Refresh-button');
+            if (ref.innerText==='refresh'){
+                ref.innerText = 'refreshed';
+            }
+            else{
+                ref.innerText = 'refresh';
+            }
+        }
+        function ply(){
+            const play =  document.querySelector('.pause');
+            if (play.innerText === 'pause'){
+                play.innerText = 'play';
+            }
+            else{
+                play.innerText = 'pause';
+            }
+        }
+    </script>
+</body>
+</html>
