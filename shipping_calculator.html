@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>shipping calculator</p>
+    <input type="text" placeholder="Enter the amount" class="js-cost-input" 
+    onkeydown="if(event.key='Enter'){
+        calc();
+    }">
+    <button onclick="calc();" class="Calc-button">calculate</button>
+    <p class="js-cost"></p>
+</body>
+<script>
+    function calc(){
+        const ip_ele = document.querySelector('.js-cost-input');
+        let amount = Number(ip_ele.value);
+        if(amount<40){
+             amount = amount+10;
+        }
+        document.querySelector('.js-cost').innerHTML = `$${amount}`;
+    }
+</script>
+</html>
